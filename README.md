@@ -112,12 +112,12 @@ To do so, we navigate to the file called `Unet_Transformer_move.ipynb`and run al
 
 ![alt text](docs/figures/Segmentation_Comparison.png?raw=true "Error rate of different methods")
 
-Our Self-attention UNet is outperfoming SAM2 and E-U-Net at various matrices. Specifically,
-the model correctly identified **99.9%** of the live cells, while only **0.1%** of live cells were misclassified as dead. Similarly,
-**99.9%** of the dead cells were correctly identified, with only **0.1%** of dead cells misclassified as live.The precision, recall, and
-F1 scores for both live and dead cells are all above **98%** as illustrated by the table below. 
+Our Self-attention UNet is outperfoming SAM2 and E-U-Net at various matrices. 
 
 ![alt text](docs/figures/segmentation_metrics.png?raw=true "Error rate of different methods")
+
+Specifically,
+the model correctly identified **99.9%** of the live cells, while only **0.1%** of live cells were misclassified as dead. Similarly, **99.9%** of the dead cells were correctly identified, with only **0.1%** of dead cells misclassified as live.The precision, recall, and F1 scores for both live and dead cells are all above **98%** as illustrated by the table below. 
 
 Also, with regarding the performance of Dynamic Cell Tracking, the graph below demonstrates how predicted cell trajectories closely track actual observed movements, with only minor deviations in
 some instances.
