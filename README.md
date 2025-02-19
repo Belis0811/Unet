@@ -93,7 +93,7 @@ TEST_PATH = os.path.abspath("../data/sample_data/10x_magnification")
 ```
 
 After running the last cell of this file,
-you will generate two files called `X_train.npy` and `Y-train.npy`, located at the folder: `./Unet/data/processed`
+it will generate two files called `X_train.npy` and `Y-train.npy`, located at the folder: `./Unet/data/processed`
 
 
 ## Training Segmentation Model
