@@ -123,19 +123,5 @@ The model correctly identified **99.9%** of the live cells, while only **0.1%** 
 
 Also, regarding the performance of Dynamic Cell Tracking, the graph below demonstrates how predicted cell trajectories closely track actual observed movements, with only minor deviations in some instances.
 
-## Citation
-
-Please cite the following paper if this model assists your research:
-```bibtex
-@inproceedings{cheng2024ai,
-  title={AI-enabled live-dead cell viability classification and motion forecasting},
-  author={Cheng, Anzhe and Yin, Chenzhong and Lamba, Michael A.S. and Sertorio, Mathieu and DeJesus, Maldonado and Alexis, Jorge and Sathler, Alexandre R. and Chang, Yu and Chiritescu, Catalin and Best, Catherine A. and Ionascu, Dan and Kotov, Nicholas and Nazarian, Shahin and Bogdan, Paul},
-  booktitle={TBD},
-  pages={TBD},
-  year={2025},
-  organization={TBD}
-}
-```
-
 ## Final Notes
 * Correspondence and requests for materials should be addressed to Professor Paul Bogdan (email: pbogdan@usc.edu)
