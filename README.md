@@ -1,9 +1,9 @@
 # AI-based architecture: Self-Attention UNet + Transformer for Cell Viability & Movement Prediction
-This repository contains an **AI-based framwork** that segments live vs dead cells from **quantitative phase imaging (QPI) data**
-and forcast their future movement. The framework combines a **self-attention UNet**(for segmentation) with a **transformer**(for dynamic cell tracking),
+This repository contains an **AI-based framework** that segments live vs dead cells from **quantitative phase imaging (QPI) data**
+and forecast their future movement. The framework combines a **self-attention UNet**(for segmentation) with a **transformer**(for dynamic cell tracking),
 building upon our paper:
 >[AI-enabled live-dead cell viability classification and
-motion forecasting](https://arxiv.org/pdf/2312.13311)
+motion forecasting]
 >
 >Anzhe Cheng, Chenzhong Yin, Michael A.S. Lamba etal.
 
@@ -77,15 +77,15 @@ Or run the following code to install:
 pip install -r requirements.txt
 ```
 ## Data Processing
-First, make sure you are at the correct working directory. Then direct to the `notebooks` folder by
+First, make sure you are in the correct working directory. Then direct to the `notebooks` folder by
 ```
 cd notebooks
 ```
 
-run every cell in the `process_data.ipynb` file, which includes image loading, processing, and data splitting. 
+Run every cell in the `process_data.ipynb` file, which includes image loading, processing, and data splitting. 
 
 *Note that we use **Spatial Light Interference Microscopy(SLIM)** images of unlabeled CHO cells at different magnifications (10x,40x), which can
-be find at the directory: `Unet/data/sample_data`. By default we will process 40x data, if you would like to process 10x data, pleaes change the 
+be found in the directory: `Unet/data/sample_data`. By default, we will process 40x data, if you would like to process 10x data, please change the 
 TRAIN_PATH and TEST_PATH at the first cell to the following:*
 ```
 TRAIN_PATH = os.path.abspath("../data/sample_data/10x_magnification") 
@@ -93,18 +93,18 @@ TEST_PATH = os.path.abspath("../data/sample_data/10x_magnification")
 ```
 
 After running the last cell of this file,
-it will generate two files called `X_train.npy` and `Y-train.npy`, located at the folder: `./Unet/data/processed`
+it will generate two files called `X_train.npy` and `Y-train.npy`, located in the folder: `./Unet/data/processed`
 
 
 ## Training Segmentation Model
 
 Then, navigate to the file called `live_dead_segment.ipynb`, which trains the **self-attention UNet** to segment live vs. dead cells.
 
-*Note that you have the option to not re-train the model from scratch, please follow the comments in the file to decide of using checkpoint file*
+*Note that you have the option to not re-train the model from scratch, please follow the comments in the file to decide on using checkpoint file*
 
 ## Training Movement Prediction Model
 
-Now we want to use the transformer module to predict future cell positions/time-steps to finally combine them and make what we called AI-based architecture.
+Now, we want to use the transformer module to predict future cell positions/time steps to finally combine them and make what we call AI-based architecture.
 
 To do so, we navigate to the file called `Unet_Transformer_move.ipynb`and run all cells.
 
@@ -117,15 +117,11 @@ Our Self-attention UNet is outperfoming SAM2 and E-U-Net at various matrices.
 ![alt text](docs/figures/segmentation_metrics.png?raw=true "Error rate of different methods")
 
 Specifically,
-the model correctly identified **99.9%** of the live cells, while only **0.1%** of live cells were misclassified as dead. Similarly, **99.9%** of the dead cells were correctly identified, with only **0.1%** of dead cells misclassified as live.The precision, recall, and F1 scores for both live and dead cells are all above **98%** as illustrated by the table below. 
+The model correctly identified **99.9%** of the live cells, while only **0.1%** of live cells were misclassified as dead. Similarly, **99.9%** of the dead cells were correctly identified, with only **0.1%** of dead cells misclassified as live.The precision, recall, and F1 scores for both live and dead cells are all above **98%** as illustrated by the table below. 
 
 ![alt text](docs/figures/cell_move_predict.png?raw=true "Error rate of different methods")
 
-Also, with regarding the performance of Dynamic Cell Tracking, the graph below demonstrates how predicted cell trajectories closely track actual observed movements, with only minor deviations in some instances.
-## Acknowledgements
-
-* This work was supported by []
-* Special thanks to Professor Paul Bogdan, Professor Shahin Nazarian, Professor Nicholas Kotov and Professor Dan Ionascu for their support!
+Also, regarding the performance of Dynamic Cell Tracking, the graph below demonstrates how predicted cell trajectories closely track actual observed movements, with only minor deviations in some instances.
 
 ## Citation
 
@@ -141,5 +137,5 @@ Please cite the following paper if this model assists your research:
 }
 ```
 
-## Final Noates
+## Final Notes
 * Correspondence and requests for materials should be addressed to Professor Paul Bogdan (email: pbogdan@usc.edu)
