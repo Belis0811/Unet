@@ -5,7 +5,7 @@ building upon our paper:
 >[AI-enabled live-dead cell viability classification and
 motion forecasting]
 >
->Anzhe Cheng, Chenzhong Yin, Michael A.S. Lamba etal.
+>Anzhe Cheng, Chenzhong Yin etal.
 
 ## Overview
 Paper is implemented with official pytorch
@@ -125,3 +125,4 @@ Also, regarding the performance of Dynamic Cell Tracking, the graph below demons
 
 ## Final Notes
 * Correspondence and requests for materials should be addressed to Professor Paul Bogdan (email: pbogdan@usc.edu)
+*The weights file included in this repository corresponds to an earlier version of the model. The latest weights file is currently private and will be made public at a later date. If you require access to the newest version, please contact Anhze (anzheche@usc.edu) or Professor Bogdan (pbogdan@usc.edu).
