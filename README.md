@@ -124,5 +124,5 @@ The model correctly identified **99.9%** of the live cells, while only **0.1%** 
 Also, regarding the performance of Dynamic Cell Tracking, the graph below demonstrates how predicted cell trajectories closely track actual observed movements, with only minor deviations in some instances.
 
 ## Final Notes
-* Correspondence and requests for materials should be addressed to Professor Paul Bogdan (email: pbogdan@usc.edu)
-*The weights file included in this repository corresponds to an earlier version of the model. The latest weights file is currently private and will be made public at a later date. If you require access to the newest version, please contact Anhze (anzheche@usc.edu) or Professor Bogdan (pbogdan@usc.edu).
+* Correspondence and requests for materials should be addressed to Professor Paul Bogdan (email: pbogdan@usc.edu) 
+* The weights file included in this repository corresponds to an earlier version of the model. The latest weights file is currently private and will be made public at a later date. If you require access to the newest version, please contact Anhze (anzheche@usc.edu) or Professor Bogdan (pbogdan@usc.edu).
