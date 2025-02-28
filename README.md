@@ -125,4 +125,4 @@ Also, regarding the performance of Dynamic Cell Tracking, the graph below demons
 
 ## Final Notes
 * Correspondence and requests for materials should be addressed to Professor Paul Bogdan (email: pbogdan@usc.edu) 
-* The weights file included in this repository corresponds to an earlier version of the model. The latest weights file is currently private and will be made public at a later date. If you require access to the newest version, please contact Anhze (anzheche@usc.edu) or Professor Bogdan (pbogdan@usc.edu).
+* The weights file included in this repository corresponds to an earlier version of the model. The latest weights file is currently private and will be made public at a later date. If you require access to the newest version, please contact Anzhe (anzheche@usc.edu) or Professor Bogdan (pbogdan@usc.edu).
