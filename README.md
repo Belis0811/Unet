@@ -1,4 +1,4 @@
-# AI-based architecture: Self-Attention UNet + Transformer for Cell Viability & Movement Prediction
+# AI-enabled live-dead cell viability classification and motion forecasting
 This repository contains an **AI-based framework** that segments live vs dead cells from **quantitative phase imaging (QPI) data**
 and forecast their future movement. The framework combines a **self-attention UNet**(for segmentation) with a **transformer**(for dynamic cell tracking),
 building upon our paper:
