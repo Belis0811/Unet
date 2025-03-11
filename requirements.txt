@@ -117,7 +117,7 @@ jupyter-client @ file:///home/conda/feedstock_root/build_artifacts/jupyter_clien
 jupyter_core @ file:///home/conda/feedstock_root/build_artifacts/jupyter_core_1710257277185/work
 jupyterlab_widgets==3.0.11
 kaleido==0.2.1
-keras==3.6.0
+keras==3.9.0
 Keras-Applications==1.0.8
 kiwisolver @ file:///croot/kiwisolver_1672387140495/work
 lazy_loader @ file:///croot/lazy_loader_1695850097191/work
