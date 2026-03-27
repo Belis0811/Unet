@@ -1,29 +1,4 @@
 #!/usr/bin/env python3
-"""
-Train paper-inspired QPI segmentation models on the local dataset layout:
-
-    data/<group_id>/<sample_id>/
-        images/*_mSLIM.png
-        masks/*.png
-
-The script uses exactly 2 top-level groups for validation by default and all
-remaining groups for training.
-
-Important caveats:
-1. `gil2023` is implemented as a close residual U-Net matching the paper's
-   described architecture and training recipe.
-2. `dm_qpmnet` is implemented as a dual-encoder fusion network. If no second
-   modality is available, the script can duplicate the primary QPI image into
-   the second branch so the code still runs, but that is only an approximation.
-3. `pg_diffseg` is implemented as a compact prior-guided diffusion-style
-   segmenter inspired by Shao et al. It is not an exact reproduction of their
-   latent-diffusion pipeline, which depends on a substantially larger setup.
-4. `cellsnap2024` is not a trainable neural model. It is a 3D rule-based
-   algorithm, so this script reports that it should not be retrained.
-5. `chen2024` is a review article, not a trainable model, so this script
-   reports that there is no model to retrain from that paper.
-"""
-
 from __future__ import annotations
 
 import argparse
